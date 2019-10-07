@@ -1,0 +1,79 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src *  'unsafe-inline'; script-src *  'unsafe-inline'; media-src *">
+    <allow-navigation href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <title>Quirat</title>
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/ajustes.css">
+  </head>
+  <body>
+
+    <div class="container off container_ajustes" id="container-content">  <!-- Pagina entera -->
+      <div id="container-content-title">
+        <h2>Ajustes</h2>
+      </div>
+
+      <div id="container-content-display" class="">
+        <div id="container-content-incognito" class="off">
+        </div>
+        <h4 id="container-content-incognito-caption" class="off">Estás en incógnito</h4>
+
+        <div id="container-content-user" class="off">
+          <div class="container-content-user-guidelines" id="container-content-user-id">
+            <p>ID</p>
+            <p id="id"></p>
+          </div>
+        </div>
+      </div>
+
+      <div id="container-content-bottom" class="off">
+        <button type="button" class="off" id="iniciar_sesion" onclick="window.location.href='iniciar_sesion.html'">Iniciar Sesión</button>
+        <button type="button" class="off" id="cerrar_sesion" onclick="logout()">Cerrar Sesión</button>
+        <button type="button" class="off" id="registro" onclick="">Registrarse</button>
+      </div>
+
+    </div>
+
+    <div class="container" id="container-menu">
+      <div class="container-menu-nav" id="container-menu-nav1">  <!-- Contenedor fijo de los botones -->
+        <div class="container-menu-options" id="container-menu-option1" onclick="window.location.href = 'index.html'">
+
+        </div>
+        <div class="container-menu-options" id="container-menu-option2" onclick="window.location.href = 'logros.html'">
+
+        </div>
+        <div class="container-menu-options" id="container-menu-option3">
+
+        </div>
+        <div class="container-menu-options" id="container-menu-option4">
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="container-header">
+      <header>
+
+      </header>
+    </div>
+    <!-- Extras -->
+
+    <div id="carga" class="">  <!-- Fondo -->
+  		<div id="container">  <!-- Contenedor -->
+  			<img src="iconos/quirat/Quirat Gem.svg">  <!-- Roja -->
+  		</div>
+  	</div>
+
+
+
+    <script src="jquery/jquery-3.3.1.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-database.js"></script>
+    <script src="js/ajustes.js"></script>
+    <script src="js/prueba.js"></script>
+  </body>
+</html>

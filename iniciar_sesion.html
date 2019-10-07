@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src *  'unsafe-inline'; script-src *  'unsafe-inline'; media-src *">
+    <title>Iniciar Sesion</title>
+    <allow-navigation href="http://*/*" />
+    <allow-intent href="https://*/*" />
+  </head>
+  <body>
+
+    <div class="login-form">
+
+		<div class="header">
+		<h1>Welcome to this Site</h1>
+		<span>Please, fill this form</span>
+		</div>
+
+		<div class="content">
+		<input name="username" id="username" type="text" class="input username" placeholder="Username" />
+		<div class="user-icon"></div>
+		<input name="password" id="password" type="password" class="input password" placeholder="Password" />
+		<div class="pass-icon"></div>
+		</div>
+
+		<div class="footer" id="login">
+		<a href="#" class="button" onclick="iniciar_sesion()">Login</a>
+		</div>
+    <div class="footer" id="register">
+		<a href="#" class="button" onclick="register()">Register</a>
+		</div>
+    <div class="footer" id="logout">
+		<a href="#" class="button" onclick="logout()">Logout</a>
+		</div>
+
+	</div>
+
+
+
+
+
+  <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-database.js"></script>
+  <script src="jquery/jquery-3.3.1.min.js"></script>
+  <script src="js/prueba.js"></script>
+</body>
+</html>

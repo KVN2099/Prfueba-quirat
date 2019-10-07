@@ -1,0 +1,27 @@
+#container-menu-option1 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url('../icons/Iconos App Quirat-01.svg');
+}
+#container-menu-option2 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url('../icons/Iconos App Quirat-06.svg');
+  margin-left: -5px;
+}
+#container-menu-option3 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url('../icons/Iconos App Quirat-07.svg');
+  margin-left: -5px;
+}
+#container-menu-option4 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url('../icons/Iconos App Quirat-08.svg');
+  margin-left: -5px;
+}

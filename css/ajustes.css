@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
+
+h4 , h2 {
+  font-family: 'Comfortaa', comfortaa;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+
+}
+
+h4 {
+  color: #595959;
+}
+
+p {
+  font-family: 'Comfortaa', comfortaa;
+  font-size: 30px;
+  display: block;
+}
+
+#container-content-title {
+  margin-top: 70px;
+}
+
+#container-menu-option1 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url('../icons/Iconos App Quirat-05.svg');
+}
+#container-menu-option2 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url('../icons/Iconos App Quirat-06.svg');
+  margin-left: -5px;
+}
+#container-menu-option3 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url('../icons/Iconos App Quirat-07.svg');
+  margin-left: -5px;
+}
+#container-menu-option4 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url('../icons/Iconos App Quirat-04.svg');
+  margin-left: -5px;
+}
+
+#container-content-incognito {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url('../icons/incognito.svg');
+  width: 200px;
+  height: 200px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.off {
+  display: none;
+}
+
+#container-content-bottom {
+}
+
+button {
+  display: block;
+  padding: 15px;
+  color: #000;
+  font-family: sans-serif;
+  font-size: 20px;
+  border-radius: 5px;
+  border-style: none;
+  background: #fff;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-top: 5px;
+  background: #7DAEF4;
+}
+
+#container-content {
+  height: 100vh;
+}
+
+#carga #container {
+  width: 200px;
+  height: 200px;
+  background: #fff;
+  border-radius: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  padding: 15px;
+  box-sizing: border-box;
+  box-shadow: 0 0 2px;
+}
+
+#carga #container img {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  margin-top: 50%;
+  margin-left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+/*  Prueba carga 1  */
+#carga #container img {
+  animation: animation 2s infinite;
+}
+
+@keyframes animation {
+  0% {
+    margin-top: 50%;
+    margin-left: 50%;
+    transform: translateX(-50%) translateY(-50%) rotate(0deg);
+  }
+
+  100% {
+    margin-top: 50%;
+    margin-left: 50%;
+    transform: translateX(-50%) translateY(-50%) rotate(360deg);
+  }
+}
+
+video {
+  width: 170px;
+  transform: translateZ(0);
+}
+
+/*  User content  */
+#container-content-user {
+  background: red;
+  width: 80%;
+  max-width: 300px;
+  height: 300px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}

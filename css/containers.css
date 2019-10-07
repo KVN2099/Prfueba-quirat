@@ -1,0 +1,143 @@
+.content-box {
+    background-color: #fafafb;
+    box-shadow: 1px 4px 8px rgba(0,0,0,.15);
+    transition: all .3s ease-in-out;
+    padding: 10px;
+    padding-bottom: 0;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    height: auto;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+#carga #container video {
+  transform: translateZ(0);
+}
+
+#carga #container {
+  width: 200px;
+  height: 200px;
+  background: #fff;
+  border-radius: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%) translateZ(0);
+  padding: 15px;
+  box-sizing: border-box;
+  box-shadow: 0 0 2px;
+}
+
+#carga #container img {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  margin-top: 50%;
+  margin-left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+/*  Prueba carga 1  */
+#carga #container img {
+  animation: animation 2s infinite;
+}
+
+@keyframes animation {
+  0% {
+    margin-top: 50%;
+    margin-left: 50%;
+    transform: translateX(-50%) translateY(-50%) rotate(0deg);
+  }
+
+  100% {
+    margin-top: 50%;
+    margin-left: 50%;
+    transform: translateX(-50%) translateY(-50%) rotate(360deg);
+  }
+}
+img {
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+.content-box .finbyz-icon {
+    height: 100px;
+    width: 100px;
+    display: inline;
+}
+
+/*  Especialidades  */
+.info {
+  background: #7DAEF4;
+  color: #fff;
+}
+
+.ema {
+  background: #FFFF33;
+  color: #000;
+}
+
+.eca {
+  background: #ADFF2F;
+  color: #000;
+}
+
+.arqui {
+  background: #00008b ;
+  color: #fff;
+}
+
+.dise {
+  background: #a40000;
+  color: #fff;
+}
+
+.meca {
+  background: #2F4F4F;
+  color: #fff;
+}
+
+/*  Texto  */
+h4, p {
+  text-align: center;
+}
+
+p {
+
+}
+
+#search {
+  width: 100%;
+  padding: 10px 0 10px 0;
+  border-style: none;
+  margin-top: 15px;
+  text-align: center;
+  background: #a9a9a9;
+  border-radius: 5px;
+  text-align: center;
+}
+
+option {
+  color: #fff;
+  text-align: center;
+  width: 100%;
+}
+
+.btn_direcciones {
+  padding: 15px;
+  color: #000;
+  font-family: sans-serif;
+  font-size: 20px;
+  border-radius: 5px;
+  border-style: none;
+  background: #fff;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-top: 5px;
+}
+
+.secreto {
+  display: none;
+}
+
+/*  Select  */

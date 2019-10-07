@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.container {  /*  La pagina entera y el menu  */
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/*  Configuracion del header  */
+#container-header {
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  box-sizing: border-box;
+  box-shadow: 0 0 2px gray;
+  z-index: 100;
+  background: #fff;
+}
+
+#container-header header {
+  position: relative;
+  width: 120px;
+  height: 60px;
+  margin-left: 50%;
+  margin-top: 0;
+  transform: translateX(-50%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url('../icons/Logo-09.svg');
+}
+
+/*  Configuracion del menu  */
+#container-menu {
+  height: 60px;
+  position: fixed;
+  bottom: 0;
+  box-shadow: 0 0 2px gray;
+  z-index: 100;
+  background: #fff;
+}
+
+.container-menu-nav {
+  width: 100%;
+  height: 100%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  max-width: 400px;
+  position: relative;
+}
+
+.container-menu-options {
+  position: relative;
+  width: 25%;
+  height: 100%;
+  max-width: 100px;
+  display: inline-block;
+  margin: 0;
+}
+
+/*  Configuracion de la pagina  */
+#container-content {
+  position: relative;
+  width: 100%;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  height: 120vh;
+}
+
+/*  Container-Especialidades  */
+.container-content-box {
+  height: auto;
+  padding: 10px 10px 15px 10px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+h1 {
+  font-family: 'Comfortaa', comfortaa;
+  font-size: 30px;
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+#especialidades {
+  top: 0;
+}
+
+#tematicas {
+  top: 208px;
+}
+
+#grados {
+  top: 416px;
+}
+
+/*  caja de slides  */
+.container-content-box-slides {
+  margin-top: 33px;
+  height: 150px;
+}
+
+#container-content-box-slides1 {
+  width: 1895px;
+}
+
+#container-content-box-slides2 {
+  width: 2210px;
+}
+
+#container-content-box-slides3 {
+  width: 635px;
+}
+
+.container-content-box-slide {
+  width: 300px;
+  height: 100%;
+  border-radius: 5px;
+  box-sizing: border-box;
+  box-shadow: 0 0 2px;
+  display: inline-block;
+  margin: 5px;
+}

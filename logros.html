@@ -1,0 +1,383 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src *  'unsafe-inline'; script-src *  'unsafe-inline'; media-src *">
+    <title>Quirat</title>
+    <allow-navigation href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/containers.css">
+    <link rel="stylesheet" href="css/logros.css">
+  </head>
+  <body>
+      <div class="container container_logros off" id="container-content">  <!-- Pagina entera -->
+        <div id="content-logros_obtenidos" class="content active"> <!-- Contenido de las paginas -->
+          <h2>¿Buscás algo en específico?</h2>
+          <select id="filter">
+            <option style="color:#696969; font-family: sans-serif" value="-1">---</option>
+            <option style="color:#696969; font-family: sans-serif" value="0">Electromecánica</option>
+            <option style="color:#696969; font-family: sans-serif" value="1">Electrónica</option>
+            <option style="color:#696969; font-family: sans-serif" value="2">Dibujo Arquitectónico</option>
+            <option style="color:#696969; font-family: sans-serif" value="4">Informática</option>
+            <option style="color:#696969; font-family: sans-serif" value="5">Diseño Gráfico</option>
+            <option style="color:#696969; font-family: sans-serif" value="6">Mecánica de Precisión</option>
+          </select>
+          <button type="button" onclick="escanear()" id="btn-qr">Escanear Código</button>
+          <div class="row">
+
+      <div class="col-md-4 text-center" style="opacity: 1;">
+
+      </div>
+
+        <!-- electromecanica -->
+        <div class="col-md-4 text-center" style="opacity: 1;">
+          <div class="content-box ema">
+            <h4 class="content-box-title">Aprendiz Electromecánico</h4>
+            <img src="iconos/electromecanica/Iconos-01.svg">
+            <p class="content-box-sub">Visita 3 proyectos de electromecánica.</p>
+            <button type="button" class="ema btn_direcciones">Direcciones</button>
+          </div>
+        </div>
+
+        <div class="col-md-4 text-center" style="opacity: 1;">
+          <div class="content-box ema">
+            <h4 class="content-box-title">General Electromecánico</h4>
+            <img src="iconos/electromecanica/Iconos-02.svg" id="img_extender">
+            <p class="content-box-sub">Visita 5 proyectos de electromecánica.</p>
+            <button type="button" class="ema btn_direcciones">Direcciones</button>
+          </div>
+        </div>
+
+        <div class="col-md-4 text-center" style="opacity: 1;">
+          <div class="content-box ema">
+            <h4 class="content-box-title">Maestro Electromecánico</h4>
+            <img src="iconos/electromecanica/Iconos-03.svg">
+            <p class="content-box-sub">Visita 10 proyectos de electromecánica.</p>
+            <button type="button" class="ema btn_direcciones">Direcciones</button>
+          </div>
+        </div>
+
+        <div class="col-md-4 text-center" style="opacity: 1;">
+          <div class="content-box ema">
+            <h4 class="content-box-title">Automatizante</h4>
+            <img src="iconos/electromecanica/Iconos-04.svg">
+            <p class="content-box-sub">Visita todos los proyectos de electromecánica.</p>
+            <button type="button" class="ema btn_direcciones">Direcciones</button>
+          </div>
+        </div>
+        <!-- electronica -->
+        <div class="col-md-4 text-center" style="opacity: 1;">
+          <div class="content-box eca">
+            <h4 class="content-box-title">Aprendiz Electrónico</h4>
+            <img src="iconos/electromecanica/Iconos-05.svg">
+            <p class="content-box-sub">Visita 3 proyectos de electrónica.</p>
+            <button type="button" class="eca btn_direcciones">Direcciones</button>
+          </div>
+        </div>
+
+        <div class="col-md-4 text-center" style="opacity: 1;">
+          <div class="content-box eca">
+            <h4 class="content-box-title">General Electrónico</h4>
+            <img src="iconos/electromecanica/Iconos-06.svg">
+            <p class="content-box-sub">Visita 5 proyectos de electrónica.</p>
+            <button type="button" class="eca btn_direcciones">Direcciones</button>
+          </div>
+        </div>
+
+        <div class="col-md-4 text-center" style="opacity: 1;">
+          <div class="content-box eca">
+            <h4 class="content-box-title">Maestro Electrónico</h4>
+            <img alt="Real-time information" title="Real-time information" class="finbyz-icon img-responsive" src="https://finbyz.tech/svg/icon%20Real-time%20information.svg">
+            <p class="content-box-sub">Visita 10 proyectos de electrónica.</p>
+            <button type="button" class="eca btn_direcciones">Direcciones</button>
+          </div>
+        </div>
+
+        <div class="col-md-4 text-center" style="opacity: 1;">
+          <div class="content-box eca">
+            <h4 class="content-box-title">Electrizante</h4>
+            <img alt="Real-time information" title="Real-time information" class="finbyz-icon img-responsive" src="https://finbyz.tech/svg/icon%20Real-time%20information.svg">
+            <p class="content-box-sub">Visita todos los proyectos de electrónica.</p>
+            <button type="button" class="eca btn_direcciones">Direcciones</button>
+          </div>
+        </div>
+        <!-- arquitectonico -->
+        <div class="col-md-4 text-center" style="opacity: 1;">
+          <div class="content-box arqui">
+            <h4 class="content-box-title">Aprendiz Arquitecto</h4>
+            <img alt="Real-time information" title="Real-time information" class="finbyz-icon img-responsive" src="https://finbyz.tech/svg/icon%20Real-time%20information.svg">
+            <p class="content-box-sub">Visita 3 proyectos de dibujo arquitectónico.</p>
+            <button type="button" class="arqui btn_direcciones">Direcciones</button>
+          </div>
+        </div>
+
+        <div class="col-md-4 text-center" style="opacity: 1;">
+          <div class="content-box arqui">
+            <h4 class="content-box-title">General Arquitecto</h4>
+            <img alt="Real-time information" title="Real-time information" class="finbyz-icon img-responsive" src="https://finbyz.tech/svg/icon%20Real-time%20information.svg">
+            <p class="content-box-sub">Visita 5 proyectos de dibujo arquitectónico.</p>
+            <button type="button" class="arqui btn_direcciones">Direcciones</button>
+          </div>
+        </div>
+
+        <div class="col-md-4 text-center" style="opacity: 1;">
+          <div class="content-box arqui">
+            <h4 class="content-box-title">Maestro Arquitecto</h4>
+            <img alt="Real-time information" title="Real-time information" class="finbyz-icon img-responsive" src="https://finbyz.tech/svg/icon%20Real-time%20information.svg">
+            <p class="content-box-sub">Visita 10 proyectos de dibujo arquitectónico.</p>
+            <button type="button" class="arqui btn_direcciones">Direcciones</button>
+          </div>
+        </div>
+
+        <div class="col-md-4 text-center" style="opacity: 1;">
+          <div class="content-box arqui">
+            <h4 class="content-box-title">Arquitectónico</h4>
+            <img alt="Real-time information" title="Real-time information" class="finbyz-icon img-responsive" src="https://finbyz.tech/svg/icon%20Real-time%20information.svg">
+            <p class="content-box-sub">Visita todos los proyectos de dibujo arquitectónico.</p>
+            <button type="button" class="arqui btn_direcciones">Direcciones</button>
+          </div>
+        </div>
+
+        <!-- info -->
+        <div class="col-md-4 text-center" style="opacity: 1;">
+          <div class="content-box info">
+            <h4 class="content-box-title">Aprendiz Informático</h4>
+            <img alt="Real-time information" title="Real-time information" class="finbyz-icon img-responsive" src="https://finbyz.tech/svg/icon%20Real-time%20information.svg">
+            <p class="content-box-sub">Visita 3 proyectos de informática.</p>
+            <button type="button" class="info btn_direcciones">Direcciones</button>
+          </div>
+        </div>
+
+        <div class="col-md-4 text-center" style="opacity: 1;">
+          <div class="content-box info">
+            <h4 class="content-box-title">General Informático</h4>
+            <img alt="Real-time information" title="Real-time information" class="finbyz-icon img-responsive" src="https://finbyz.tech/svg/icon%20Real-time%20information.svg">
+            <p class="content-box-sub">Visita 5 proyectos de informática.</p>
+            <button type="button" class="info btn_direcciones">Direcciones</button>
+          </div>
+        </div>
+
+        <div class="col-md-4 text-center" style="opacity: 1;">
+          <div class="content-box info">
+            <h4 class="content-box-title">Maestro Informático</h4>
+            <img alt="Real-time information" title="Real-time information" class="finbyz-icon img-responsive" src="https://finbyz.tech/svg/icon%20Real-time%20information.svg">
+            <p class="content-box-sub">Visita 10 proyectos de informática.</p>
+            <button type="button" class="info btn_direcciones">Direcciones</button>
+          </div>
+        </div>
+
+        <div class="col-md-4 text-center" style="opacity: 1;">
+          <div class="content-box info">
+            <h4 class="content-box-title">Infomaníaco</h4>
+            <img alt="Real-time information" title="Real-time information" class="finbyz-icon img-responsive" src="https://finbyz.tech/svg/icon%20Real-time%20information.svg">
+            <p class="content-box-sub">Visita todos los proyectos de informática.</p>
+            <button type="button" class="info btn_direcciones">Direcciones</button>
+          </div>
+        </div>
+        <!-- dise -->
+        <div class="col-md-4 text-center" style="opacity: 1;">
+          <div class="content-box dise">
+            <h4 class="content-box-title">Aprendiz Diseñador</h4>
+            <img alt="Real-time information" title="Real-time information" class="finbyz-icon img-responsive" src="https://finbyz.tech/svg/icon%20Real-time%20information.svg">
+            <p class="content-box-sub">Visita 3 proyectos de diseño gráfico.</p>
+            <button type="button" class="dise btn_direcciones">Direcciones</button>
+          </div>
+        </div>
+
+        <div class="col-md-4 text-center" style="opacity: 1;">
+          <div class="content-box dise">
+            <h4 class="content-box-title">General Diseñador</h4>
+            <img alt="Real-time information" title="Real-time information" class="finbyz-icon img-responsive" src="https://finbyz.tech/svg/icon%20Real-time%20information.svg">
+            <p class="content-box-sub">Visita 5 proyectos de diseño gráfico.</p>
+            <button type="button" class="dise btn_direcciones">Direcciones</button>
+          </div>
+        </div>
+
+        <div class="col-md-4 text-center" style="opacity: 1;">
+          <div class="content-box dise">
+            <h4 class="content-box-title">Maestro Diseñador</h4>
+            <img alt="Real-time information" title="Real-time information" class="finbyz-icon img-responsive" src="https://finbyz.tech/svg/icon%20Real-time%20information.svg">
+            <p class="content-box-sub">Visita 10 proyectos de diseño gráfico.</p>
+            <button type="button" class="dise btn_direcciones">Direcciones</button>
+          </div>
+        </div>
+
+        <div class="col-md-4 text-center" style="opacity: 1;">
+          <div class="content-box dise">
+            <h4 class="content-box-title">Artístico</h4>
+            <img alt="Real-time information" title="Real-time information" class="finbyz-icon img-responsive" src="https://finbyz.tech/svg/icon%20Real-time%20information.svg">
+            <p class="content-box-sub">Visita todos los proyectos de diseño gráfico.</p>
+            <button type="button" class="dise btn_direcciones">Direcciones</button>
+          </div>
+        </div>
+        <!-- meca -->
+        <div class="col-md-4 text-center" style="opacity: 1;">
+          <div class="content-box meca">
+            <h4 class="content-box-title">Aprendiz Mecánico</h4>
+            <img alt="Real-time information" title="Real-time information" class="finbyz-icon img-responsive" src="https://finbyz.tech/svg/icon%20Real-time%20information.svg">
+            <p class="content-box-sub">Visita 3 proyectos de mecánica de precisión.</p>
+            <button type="button" class="meca btn_direcciones">Direcciones</button>
+          </div>
+        </div>
+
+        <div class="col-md-4 text-center" style="opacity: 1;">
+          <div class="content-box meca">
+            <h4 class="content-box-title">General Mecánico</h4>
+            <img alt="Real-time information" title="Real-time information" class="finbyz-icon img-responsive" src="https://finbyz.tech/svg/icon%20Real-time%20information.svg">
+            <p class="content-box-sub">Visita 5 proyectos de mecánica de precisión.</p>
+            <button type="button" class="meca btn_direcciones">Direcciones</button>
+          </div>
+        </div>
+
+        <div class="col-md-4 text-center" style="opacity: 1;">
+          <div class="content-box meca">
+            <h4 class="content-box-title">Maestro Mecánico</h4>
+            <img alt="Real-time information" title="Real-time information" class="finbyz-icon img-responsive" src="https://finbyz.tech/svg/icon%20Real-time%20information.svg">
+            <p class="content-box-sub">Visita 10 proyectos de mecánica de precisión.</p>
+            <button type="button" class="meca btn_direcciones">Direcciones</button>
+          </div>
+        </div>
+
+        <div class="col-md-4 text-center" style="opacity: 1;">
+          <div class="content-box meca">
+            <h4 class="content-box-title">Metalúrgico</h4>
+            <img alt="Real-time information" title="Real-time information" class="finbyz-icon img-responsive" src="https://finbyz.tech/svg/icon%20Real-time%20information.svg">
+            <p class="content-box-sub">Visita todos los proyectos de mecánica de precisión.</p>
+            <button type="button" class="meca btn_direcciones">Direcciones</button>
+          </div>
+        </div>
+
+        <!-- Decimo -->
+        <div class="col-md-4 text-center" style="opacity: 1;">
+          <div class="content-box decimo">
+            <h4 class="content-box-title">Primerizo</h4>
+            <img alt="Real-time information" title="Real-time information" class="finbyz-icon img-responsive" src="https://finbyz.tech/svg/icon%20Real-time%20information.svg">
+            <p class="content-box-sub">Visita 3 proyectos de décimo.</p>
+            <button type="button" class="decimo btn_direcciones">Direcciones</button>
+          </div>
+        </div>
+
+        <div class="col-md-4 text-center" style="opacity: 1;">
+          <div class="content-box decimo">
+            <h4 class="content-box-title">Amateur</h4>
+            <img alt="Real-time information" title="Real-time information" class="finbyz-icon img-responsive" src="https://finbyz.tech/svg/icon%20Real-time%20information.svg">
+            <p class="content-box-sub">Visita 5 proyectos de décimo.</p>
+            <button type="button" class="decimo btn_direcciones">Direcciones</button>
+          </div>
+        </div>
+
+        <div class="col-md-4 text-center" style="opacity: 1;">
+          <div class="content-box decimo">
+            <h4 class="content-box-title">Experto</h4>
+            <img alt="Real-time information" title="Real-time information" class="finbyz-icon img-responsive" src="https://finbyz.tech/svg/icon%20Real-time%20information.svg">
+            <p class="content-box-sub">Visita 10 proyectos de décimo.</p>
+            <button type="button" class="decimo btn_direcciones">Direcciones</button>
+          </div>
+        </div>
+
+        <div class="col-md-4 text-center" style="opacity: 1;">
+          <div class="content-box decimo">
+            <h4 class="content-box-title">Junior</h4>
+            <img alt="Real-time information" title="Real-time information" class="finbyz-icon img-responsive" src="https://finbyz.tech/svg/icon%20Real-time%20information.svg">
+            <p class="content-box-sub">Visita todos los proyectos de décimo.</p>
+            <button type="button" class="decimo btn_direcciones">Direcciones</button>
+          </div>
+        </div>
+
+        <!-- Undecimo -->
+        <div class="col-md-4 text-center" style="opacity: 1;">
+          <div class="content-box undecimo">
+            <h4 class="content-box-title">Veterano</h4>
+            <img alt="Real-time information" title="Real-time information" class="finbyz-icon img-responsive" src="https://finbyz.tech/svg/icon%20Real-time%20information.svg">
+            <p class="content-box-sub">Visita 3 proyectos de undécimo.</p>
+            <button type="button" class="undecimo btn_direcciones">Direcciones</button>
+          </div>
+        </div>
+
+        <div class="col-md-4 text-center" style="opacity: 1;">
+          <div class="content-box undecimo">
+            <h4 class="content-box-title">Sensei</h4>
+            <img alt="Real-time information" title="Real-time information" class="finbyz-icon img-responsive" src="https://finbyz.tech/svg/icon%20Real-time%20information.svg">
+            <p class="content-box-sub">Visita 5 proyectos de undécimo.</p>
+            <button type="button" class="undecimo btn_direcciones">Direcciones</button>
+          </div>
+        </div>
+
+        <div class="col-md-4 text-center" style="opacity: 1;">
+          <div class="content-box undecimo">
+            <h4 class="content-box-title">Capitán</h4>
+            <img alt="Real-time information" title="Real-time information" class="finbyz-icon img-responsive" src="https://finbyz.tech/svg/icon%20Real-time%20information.svg">
+            <p class="content-box-sub">Visita 10 proyectos de undécimo.</p>
+            <button type="button" class="undecimo btn_direcciones">Direcciones</button>
+          </div>
+        </div>
+
+        <div class="col-md-4 text-center" style="opacity: 1;">
+          <div class="content-box undecimo">
+            <h4 class="content-box-title">Senior</h4>
+            <img alt="Real-time information" title="Real-time information" class="finbyz-icon img-responsive" src="https://finbyz.tech/svg/icon%20Real-time%20information.svg">
+            <p class="content-box-sub">Visita todos los proyectos de undécimo.</p>
+            <button type="button" class="undecimo btn_direcciones">Direcciones</button>
+          </div>
+        </div>
+
+        <!-- Secreto -->
+        <div class="col-md-4 text-center" style="opacity: 1;">
+          <div class="content-box secreto">
+            <h4 class="content-box-title">Imparable</h4>
+            <img alt="Real-time information" title="Real-time information" class="finbyz-icon img-responsive" src="https://finbyz.tech/svg/icon%20Real-time%20information.svg">
+            <p class="content-box-sub">Completa todos los logros.</p>
+            <button type="button" class="secreto btn_direcciones">Direcciones</button>
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>  <!-- Contenido Retos-->
+      </div>
+    <div class="container" id="container-header">
+      <header>
+
+      </header>
+    </div>
+
+
+    <div class="container" id="container-menu">
+      <div class="container-menu-nav" id="container-menu-nav1">  <!-- Contenedor fijo de los botones -->
+        <div class="container-menu-options" id="container-menu-option1" onclick="window.location.href = 'index.html'">
+
+        </div>
+        <div class="container-menu-options" id="container-menu-option2">
+
+        </div>
+        <div class="container-menu-options" id="container-menu-option3">
+
+        </div>
+        <div class="container-menu-options" id="container-menu-option4" onclick="window.location.href = 'ajustes.html'">
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Extras -->
+    <div id="not_found" class="off">
+
+    </div>
+
+    <div id="carga" class="">  <!-- Fondo -->
+  		<div id="container">  <!-- Contenedor -->
+  			<img src="iconos/quirat/Quirat Gem.svg">  <!-- Roja -->
+  		</div>
+  	</div>
+
+    <script src="jquery/jquery-3.3.1.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-database.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/prueba.js"></script>
+    <script src="js/chequear_usuario.js"></script>
+  </body>
+</html>
